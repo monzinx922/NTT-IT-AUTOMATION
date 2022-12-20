@@ -1,3 +1,5 @@
+# This code generate from ChatGPT (OpenAI)
+
 def is_palindrome(string):
     # Strip out all non-alphanumeric characters and convert the string to lowercase
     string = ''.join(c for c in string if c.isalnum()).lower()
