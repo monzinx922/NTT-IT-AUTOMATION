@@ -11,8 +11,8 @@ from google.oauth2.credentials import Credentials
 SCOPES = ['https://mail.google.com/']
 
 creds = None
-if os.path.exists('token.json'):
-    creds = Credentials.from_authorized_user_file('token.json', SCOPES)
+if os.path.exists('C:\Software\\token.json'):
+    creds = Credentials.from_authorized_user_file('C:\Software\\token.json', SCOPES)
 # If there are no (valid) credentials available, let the user log in.
 if not creds or not creds.valid:
     if creds and creds.expired and creds.refresh_token:
@@ -21,7 +21,7 @@ if not creds or not creds.valid:
         flow = InstalledAppFlow.from_client_secrets_file('C:\Software\cred.json', SCOPES)
         creds = flow.run_local_server(port=0)
     # Save the credentials for the next run
-    with open('token.json', 'w') as token:
+    with open('C:\Software\\token.json', 'w') as token:
         token.write(creds.to_json())
 
 
@@ -46,5 +46,5 @@ def send_message(service, user_id, message):
         print(error)
 
 
-message = create_message('me', 'tanee.bu@global.ntt', 'Hi from python email testing', 'This is a messsgae that send from python function, you may apply it for your automation!')
+message = create_message('me', 'tanee.bu@global.ntt', 'Hi from python email testing II', 'This is a messsgae that send from python function, you may apply it for your automation!')
 print(send_message(service=service, user_id='me', message=message))
