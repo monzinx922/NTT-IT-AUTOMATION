@@ -127,3 +127,11 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.vs/NTT-IT-Automation/FileContentIndex/a5775ef2-fbc4-4dc9-9133-b682ee6b2057.vsidx
+.vs/NTT-IT-Automation/FileContentIndex/read.lock
+.vs/slnx.sqlite
+.vs/NTT-IT-Automation/v17/.wsuo
+.vs/NTT-IT-Automation/FileContentIndex/4b604249-1c4e-4692-ab9f-03fa5eb8ecf3.vsidx
+.vs/NTT-IT-Automation/FileContentIndex/d876e36e-45cd-40d0-854a-0fc44a86e231.vsidx
+.vs/NTT-IT-Automation/FileContentIndex/4837428a-011b-4731-b114-644d9f372913.vsidx
+*.vsidx
